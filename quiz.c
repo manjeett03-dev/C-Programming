@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <ctype.h>
 int main()
 {
     int n;
-    char(maths), (Y), (N);
-    printf("How many subjects you had passed in your exam (0-2): ");
+    char maths;
+    printf("How many subjects you had passed in your exam (0-2): \n");
     scanf(" %d", &n);
     if (n == 2)
     {
@@ -11,29 +12,33 @@ int main()
     }
     else if (n == 1)
     {
-        printf("had you passed your maths exam (Y/N): ");
+        printf("had you passed your maths exam (Y/N): \n");
         scanf(" %c", &maths);
-        {
-            if (maths == 'Y')
 
-            {
-                printf("YOU HAD PASSED MATHS EXAM");
-                printf("YOU WON COUPON OF $20");
-            }
-            else if (maths == 'N')
-            {
-                printf("Means you had passed science exam\n");
-                printf("YOU WON COUPON OF $10");
-            }
-        }
-        else if (n == 0)
+        if (maths == 'Y')
+
         {
-            printf("BETTER LUCK NEXT TIME");
+            printf("YOU HAD PASSED MATHS EXAM\n");
+            printf("YOU WON COUPON OF $20\n");
+        }
+        else if (maths == 'N')
+        {
+            printf("Means you had passed science exam\n");
+            printf("YOU WON COUPON OF $10\n");
         }
         else
         {
-            printf("INVALID INPUT");
+            printf("invaliD char o/p\n");
         }
     }
+    else if (n == 0)
+    {
+        printf("BETTER LUCK NEXT TIME\n");
+    }
+    else
+    {
+        printf("INVALID INPUT\n");
+    }
+
     return 0;
 }
