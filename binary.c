@@ -4,8 +4,12 @@ int main()
     int arr[50], n, i, j, temp;
     printf("Enter the no. of elements in array: ");
     scanf("%d", &n);
-    printf("Enter %d the elements: ", arr[50]);
-    for (i = 1; i <= n; i++)
+    printf("Enter %d the elements: ", n);
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    for (i = 0; i < n - 1; i++)
     {
         for (j = 0; j < n - i - 1; j++)
         {
@@ -18,8 +22,10 @@ int main()
         }
     }
     printf("Sorted array: ");
-    for (i = 0; i < 1; i++)
-        printf("%d", arr[i]);
+    for (i = 0; i < n; i++)
+    {
+        printf("%d\t", arr[i]);
+    }
     printf("\n");
     return 0;
 }
