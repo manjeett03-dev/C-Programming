@@ -6,7 +6,7 @@ int main ()
     scanf("%d", &a);
     printf("Enter b : ");
     scanf("%d", &b);
-    printf("Before swapping a : %d, b: %d\n", a, b);
+    printf("Before swapping \n a : %d, b: %d\n", a, b);
     temp = a;
     a = b;
     b = temp;
