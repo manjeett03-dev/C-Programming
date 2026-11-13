@@ -4,16 +4,20 @@ int main()
 
     int a;
 
-    printf("Enter no. of failed subjects: ");
+    printf("Enter your class(1,6,10,12): ");
     scanf("%d", &a);
     switch (a)
     {
+    case 12:
+        printf("your external examiners come this time\n");
+    case 10:
+        printf("your boards are this year\n");
+    case 6:
+        printf("YOU CAN WRITE ON YOUR OWN :\n");
     case 1:
-        printf("hello\t");
-    case 2:
-        printf("nope\t");
+        printf("YOU CAN WRITE\n");
     default:
-        printf("yup");
+        printf("GOOD LUCK");
     }
     return 0;
 }
