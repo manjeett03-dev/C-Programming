@@ -9,14 +9,14 @@ int factorial(int n)
 
     else
 
-        printf("ERROR !!");
+        printf("NOT DEFINED !!");
     return 0;
 }
 
 int main()
 {
     int n;
-    printf("Enter the no. whose factorial you want: \n");
+    printf("Enter the no. whose factorial you want: ");
     scanf("%d", &n);
     printf("The factorial of %d is: %d ", n, factorial(n));
 
