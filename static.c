@@ -5,7 +5,7 @@ int a= 50;
 int quad(int o)
 {
     int static m = 10;
-    printf("The value after increment is %d \n", m);
+    printf("The value of a after increment is: %d \n", m);
     m++;
     return o + m;
 }
@@ -17,6 +17,6 @@ int main()
     quad(a);
     quad(a);
     quad(a);
-    printf("the vale of a after increment %d \n", quad(a));
+    printf("The value of a after increment is: %d \n", quad(a));
     return 0;
 }
