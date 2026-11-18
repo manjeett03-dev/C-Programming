@@ -8,10 +8,7 @@ int main()
     printf("Enter the size you want: ");
     scanf("%d", &n);
     ptr = (char *)calloc(n + 1, sizeof(char));
-    if (ptr == NULL)
-    {
-        return 1;
-    }
+ 
     for (i = 0; i < n; i++)
     {
         printf("Enter the value of string at %d is : \n", i);
@@ -23,6 +20,6 @@ int main()
     }
     printf("without input calloc stores ASCII: %d \n", ptr[n]);
     printf("Full string is : %s \n", ptr);
-    free(ptr);
+    
     return 0;
 }
