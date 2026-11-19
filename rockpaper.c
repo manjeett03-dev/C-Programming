@@ -48,7 +48,7 @@ int main()
     }
     else
     {
-        printf("YOU LOSE THE GAME : \n");
+        printf("HOW ABOUT A REMATCH !! : \n");
     }
 
     return 0;
