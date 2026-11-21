@@ -6,6 +6,7 @@ int main()
     char string [50] = "YUP.....";
     fprintf(ptr, "%s", string);
     printf("This file is now : %s\n", string);
+    fclose(ptr);
     return 0;
 
 }
