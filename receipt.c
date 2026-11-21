@@ -25,15 +25,13 @@ int main()
     scanf("%29[^\n]", name);
 
     printf("Enter item name: ");
-    getchar();
-    scanf("%29[^\n]", item);
+    scanf(" %29[^\n]", item);
 
     printf("Enter outlet name: ");
-    getchar();
-    scanf("%29[^\n]", outlet);
+    scanf(" %29[^\n]", outlet);
 
     FILE *infile = fopen("letter.txt", "r");
-    FILE *outfile = fopen("receipt.txt", "w");
+    FILE *outfile = fopen("receipt_out.txt", "w");
 
     if (infile == NULL || outfile == NULL)
     {
@@ -50,6 +48,6 @@ int main()
     }
     fclose(infile);
     fclose(outfile);
-    printf("PRINT GENERATED !!");
+    printf("RECEIPT GENERATED SUCCESSFULLY !! CHECK receipt_out.txt for print !!...\n ");
     return 0;
 }
