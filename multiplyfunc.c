@@ -1,14 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
-int product(int a, int b)
+int factorial(int a)
 {
-    return a * b;
+    if (a == 0 || a == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return (a * factorial(a - 1));
+    }
 }
 int main()
 {
-    int (*func)(int, int);
-    func = &product;
-    int d = (*func)(6, 12);
-    printf("The value of d is : %d", d);
+    int (*func)(int);
+    int n;
+    func = &factorial;
+    printf("Enter Factorial no.: ");
+    scanf("%d", &n);
+    int fact = (*func)(n);
+    printf("The value of Factorial is : %d", fact);
     return 0;
 }
