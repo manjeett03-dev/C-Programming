@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include <stdlib.h>
+
 
 double edist(int x1, int y1, int x2, int y2)
 {
