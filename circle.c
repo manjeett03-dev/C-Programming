@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-
-
 double edist(int x1, int y1, int x2, int y2)
 {
     printf("The Euclidean distance is :\n");
@@ -14,7 +12,6 @@ double areaofcircle(double (*fptr)(int, int, int, int), int x1, int y1, int x2, 
     double r = fptr(x1, y1, x2, y2);
     return (3.14 * r * r);
 }
-
 int main()
 {
     int x1, x2, y1, y2;
